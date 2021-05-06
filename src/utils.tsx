@@ -78,7 +78,9 @@ export interface Order {
   currency: string
 }
 
-export const initialOrders: Record<string, Order> = Object.fromEntries(
+export type OrdersType = Record<string, Order>
+
+export const initialOrders: OrdersType = Object.fromEntries(
   [
     {
       id: uuidv4(),
